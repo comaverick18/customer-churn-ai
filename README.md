@@ -67,3 +67,25 @@ app/            # Streamlit app files
 ## ✅ Project Status
 
 Currently in Phase 1: Data Exploration + Web Scraping
+
+# 📅 Day 1 Tasks – Churn AI Project
+
+Tracking all setup and development tasks completed on Day 1 of the project.
+
+---
+
+## ✅ Environment Setup
+- [x] Created new Conda environment `churn-ai-en2`
+- [x] Exported `environment.yml`
+- [x] Regenerated `requirements.txt`
+- [x] Pushed updated environment files to GitHub
+
+## 🌱 Git & Branching
+- [x] Created and switched to `day-1` branch
+- [ ] Committed Day 1 task list to `README.md`
+
+## 🔧 Day 1 Development Tasks
+- [ ] Load and inspect the churn dataset
+- [ ] Perform basic cleaning and EDA
+- [ ] Save findings in a Jupyter notebook
+- [ ] Outline next steps for data transformation or modeling
