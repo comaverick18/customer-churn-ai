@@ -47,27 +47,25 @@ app/            # Streamlit app files
    git clone https://github.com/your-username/customer-churn-ai.git
    cd customer-churn-ai
    ```
-
 2. Activate your environment:
    ```bash
    conda activate churn-ai-env
    ```
-
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-   
 4. Run the app (once built):
    ```bash
    streamlit run app/app.py
    ```
-   
+
+## Dataset
+Telco Customer Churn (https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
 
 ## ✅ Project Status
-
 Currently in Phase 1: Data Exploration + Web Scraping
-
 # 📅 Day 1 Tasks – Churn AI Project
 
 Tracking all setup and development tasks completed on Day 1 of the project.
