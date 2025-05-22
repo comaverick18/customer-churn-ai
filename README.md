@@ -78,37 +78,37 @@ customer-churn-ai/
 
 This project is structured into several key phases, with detailed daily tasks:
 
-* **Phase 1: Data Gathering + Exploration (Days 1-4)** [cite: 1, 2, 3]
-    * **1A: Initial Setup & Data Loading:** Setting up the environment, GitHub, PostgreSQL database, loading the initial Telco dataset, and performing basic SQL queries and Pandas cleaning. [cite: 1]
-    * **1A: EDA & Visualization:** Creating basic visualizations to understand churn patterns versus tenure, contract type, etc. [cite: 1]
-    * **1B: Sentiment Analysis:** Applying VADER for baseline sentiment scores[cite: 2], exploring and applying advanced Hugging Face Transformer models (e.g., RoBERTa-based) for more nuanced sentiment analysis on customer reviews[cite: 2, 3], joining sentiment with user profiles, and visualizing sentiment vs. churn. [cite: 3]
-* **Phase 2: Build Churn Prediction Model (Days 5-7)** [cite: 3, 4]
-    * **Feature Engineering:** Converting text fields to numerical representations, creating tenure buckets, and scaling features. [cite: 3]
-    * **Model Training:** Splitting data and training various classification models like Logistic Regression, Random Forest, and XGBoost. [cite: 3]
-    * **Model Evaluation & Explainability:** Evaluating models using metrics like F1-score and AUC, generating confusion matrices, and using SHAP for model interpretability. [cite: 4]
-    * **Model Management:** Storing predictions and serializing the best-performing model (e.g., using ONNX). [cite: 4]
-* **Phase 3: Build AI Retention Assistant (Days 8-11)** [cite: 4, 5, 6]
-    * **Base Assistant Setup:** Setting up a foundational assistant using OpenAI API or LangChain. [cite: 4]
+* **Phase 1: Data Gathering + Exploration (Days 1-4)**
+    * **1A: Initial Setup & Data Loading:** Setting up the environment, GitHub, PostgreSQL database, loading the initial Telco dataset, and performing basic SQL queries and Pandas cleaning.
+    * **1A: EDA & Visualization:** Creating basic visualizations to understand churn patterns versus tenure, contract type, etc.
+    * **1B: Sentiment Analysis:** Applying VADER for baseline sentiment scores, exploring and applying advanced Hugging Face Transformer models (e.g., RoBERTa-based) for more nuanced sentiment analysis on customer reviews, joining sentiment with user profiles, and visualizing sentiment vs. churn.
+* **Phase 2: Build Churn Prediction Model (Days 5-7)**
+    * **Feature Engineering:** Converting text fields to numerical representations, creating tenure buckets, and scaling features.
+    * **Model Training:** Splitting data and training various classification models like Logistic Regression, Random Forest, and XGBoost.
+    * **Model Evaluation & Explainability:** Evaluating models using metrics like F1-score and AUC, generating confusion matrices, and using SHAP for model interpretability.
+    * **Model Management:** Storing predictions and serializing the best-performing model (e.g., using ONNX).
+* **Phase 3: Build AI Retention Assistant (Days 8-11)**
+    * **Base Assistant Setup:** Setting up a foundational assistant using OpenAI API or LangChain.
     * **CrewAI Agent Development:** Planning and developing a multi-agent system with CrewAI, including:
-        * Marketer Agent (for messaging strategies) [cite: 5]
-        * Data Analyst Agent (for explaining churn drivers) [cite: 5]
-        * Retention Strategist Agent (for recommending offers) [cite: 5]
-    * **Workflow & Integration:** Defining agent collaboration, integrating user profiles, churn predictions, and sentiment as inputs[cite: 5, 6], and defining output formats for personalized retention messages. [cite: 6]
-    * **Contextual Retrieval (Optional):** Exploring FAISS for retrieving contextual templates or similar cases. [cite: 6]
-* **Phase 4: Front-End App + User Workflow (Days 12-14)** [cite: 6, 7]
-    * **UI Development:** Building an interactive interface using Streamlit or Gradio. [cite: 6]
-    * **Feature Implementation:** Allowing customer profile lookup, displaying churn predictions, sentiment analysis results, and AI-generated retention messages. [cite: 6, 7]
-    * **Backend Integration:** Connecting the front-end to the churn prediction model and the CrewAI pipeline. [cite: 7]
-* **Phase 5: Polish + Deploy (Days 15-17)** [cite: 7, 8]
-    * **Refinement:** Adding error handling, improving the UI, and implementing logging for interactions and AI messages. [cite: 7, 8]
-    * **Documentation:** Writing the project README, technical documentation, and a project summary. [cite: 8]
-    * **Deployment:** Deploying the application via Streamlit Cloud or Hugging Face Spaces, and ensuring the GitHub repository is well-organized. [cite: 8]
+        * Marketer Agent (for messaging strategies)
+        * Data Analyst Agent (for explaining churn drivers)
+        * Retention Strategist Agent (for recommending offers)
+    * **Workflow & Integration:** Defining agent collaboration, integrating user profiles, churn predictions, and sentiment as inputs, and defining output formats for personalized retention messages.
+    * **Contextual Retrieval (Optional):** Exploring FAISS for retrieving contextual templates or similar cases.
+* **Phase 4: Front-End App + User Workflow (Days 12-14)**
+    * **UI Development:** Building an interactive interface using Streamlit or Gradio.
+    * **Feature Implementation:** Allowing customer profile lookup, displaying churn predictions, sentiment analysis results, and AI-generated retention messages.
+    * **Backend Integration:** Connecting the front-end to the churn prediction model and the CrewAI pipeline.
+* **Phase 5: Polish + Deploy (Days 15-17)**
+    * **Refinement:** Adding error handling, improving the UI, and implementing logging for interactions and AI messages.
+    * **Documentation:** Writing the project README, technical documentation, and a project summary.
+    * **Deployment:** Deploying the application via Streamlit Cloud or Hugging Face Spaces, and ensuring the GitHub repository is well-organized.
 
 ## 📊 Current Status (as of May 22, 2025)
 * **Phase 1B (Sentiment Analysis)** activities are largely complete.
-    * VADER sentiment analysis applied. [cite: 2]
-    * Hugging Face model (`cardiffnlp/twitter-roberta-base-sentiment-latest`) explored, applied, and results integrated. [cite: 3]
-    * Initial visualization of sentiment vs. churn completed. [cite: 3]
-* Currently starting **Day 5: Feature Engineering** within Phase 2 (Build Churn Prediction Model). [cite: 3]
+    * VADER sentiment analysis applied.
+    * Hugging Face model (`cardiffnlp/twitter-roberta-base-sentiment-latest`) explored, applied, and results integrated.
+    * Initial visualization of sentiment vs. churn completed.
+* Currently starting **Day 5: Feature Engineering** within Phase 2 (Build Churn Prediction Model).
 
 ---
