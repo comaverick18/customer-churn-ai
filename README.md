@@ -30,6 +30,7 @@ A multi-agent system (using CrewAI, LangChain, and potentially OpenAI API) to:
 * **Environment Management:** Conda
 
 ## 📁 Folder Structure
+```
 customer-churn-ai/
 ├── .vscode/                # VS Code workspace settings
 ├── ai_assistant/           # Code for the AI retention assistant (CrewAI agents, etc.)
@@ -42,7 +43,7 @@ customer-churn-ai/
 ├── environment.yml         # Conda environment specification
 ├── README.md               # This file: project overview and documentation
 └── requirements.txt        # Pip requirements (if used)
-
+```
 
 
 ## ⚙️ Setup and Installation
