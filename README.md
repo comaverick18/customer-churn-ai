@@ -104,11 +104,12 @@ This project is structured into several key phases, with detailed daily tasks:
     * **Documentation:** Writing the project README, technical documentation, and a project summary.
     * **Deployment:** Deploying the application via Streamlit Cloud or Hugging Face Spaces, and ensuring the GitHub repository is well-organized.
 
-## 📊 Current Status (as of May 22, 2025)
-* **Phase 1B (Sentiment Analysis)** activities are largely complete.
-    * VADER sentiment analysis applied.
-    * Hugging Face model (`cardiffnlp/twitter-roberta-base-sentiment-latest`) explored, applied, and results integrated.
-    * Initial visualization of sentiment vs. churn completed.
-* Currently starting **Day 5: Feature Engineering** within Phase 2 (Build Churn Prediction Model).
+## 📊 Current Status (as of June 15, 2025)
+* **Phase 2 (Build Churn Prediction Model)** is now complete.
+    * The dataset has been fully preprocessed and feature-engineered, including the correction of an identified data leakage issue.
+    * Three baseline models (Logistic Regression, Random Forest, XGBoost) were trained and rigorously evaluated on a held-out test set to establish performance benchmarks.
+    * Model explainability was performed using SHAP to identify the key features driving churn predictions.
+    * The selected model (Logistic Regression) has been serialized to the interoperable ONNX format, making it ready for deployment.
+* Currently starting **Day 8: Build AI Retention Assistant** (Phase 3), beginning with the setup of LangChain and the OpenAI API.
 
 ---
